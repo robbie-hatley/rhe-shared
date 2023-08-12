@@ -2,7 +2,6 @@ sub get_suffix_from_type :prototype($) ($type) {
    !defined $type and return '.unk'; # $type is undefined
    $type = lc $type;
    $type =~ s%/x(-|.)%/%;
-   my $x = '()'; # unregistered?
    for ($type) {
       /^video\/msvideo$/                                   and return '.avi'  ;
       /^image\/bmp$/                                       and return '.bmp'  ;
