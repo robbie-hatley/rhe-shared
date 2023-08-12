@@ -1,0 +1,29 @@
+version : 0.86
+languages : %
+    C : C
+    C++ : CPP
+    CPP : CPP
+    CXX : CPP
+    Cplusplus : CPP
+    Foo : Foo
+    RPerl : RPerl
+    c++ : CPP
+    cplusplus : CPP
+    cpp : CPP
+    cxx : CPP
+    foo : Foo
+types : %
+    C : compiled
+    CPP : compiled
+    Foo : interpreted
+    RPerl : compiled
+modules : %
+    C : Inline::C
+    CPP : Inline::CPP
+    Foo : Inline::Foo
+    RPerl : Inline::RPerl
+suffixes : %
+    C : so
+    CPP : so
+    Foo : foo
+    RPerl : pmc
