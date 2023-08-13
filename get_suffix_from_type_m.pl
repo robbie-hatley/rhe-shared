@@ -10,7 +10,7 @@ sub get_suffix_from_type :prototype($) ($type) {
       m%^text/css$%                                        and return '.css'  ;
       m%^text/csv$%                                        and return '.csv'  ;
       m%^application/msword$%                              and return '.doc'  ;
-      m%^application/epub+zip$%                            and return '.epub' ;
+      m%^application/epub$%                                and return '.epub' ;
       m%^image/gif$%                                       and return '.gif'  ;
       m%^text/html$%                                       and return '.html' ;
       m%^image/vnd.microsoft.icon$%                        and return '.ico'  ;
@@ -34,7 +34,7 @@ sub get_suffix_from_type :prototype($) ($type) {
       m%^application/vnd.rar$%                             and return '.rar'  ;
       m%^application/rtf$%                                 and return '.rtf'  ;
       m%^application/sh$%                                  and return '.sh'   ;
-      m%^image/svg+xml$%                                   and return '.svg'  ;
+      m%^image/svg$%                                       and return '.svg'  ;
       m%^application/tar$%                                 and return '.tar'  ;
       m%^image/tiff$%                                      and return '.tiff' ;
       m%^font/ttf$%                                        and return '.ttf'  ;
@@ -45,7 +45,7 @@ sub get_suffix_from_type :prototype($) ($type) {
       m%^image/webp$%                                      and return '.webp' ;
       m%^application/vnd.ms-excel$%                        and return '.xls'  ;
       m%^text/xml$%                                        and return '.xml'  ;
-      m%^application/vnd.mozilla.xul+xml$%                 and return '.xul'  ;
+      m%^application/vnd.mozilla.xul$%                     and return '.xul'  ;
       m%^application/zip$%                                 and return '.zip'  ;
       m%^application/7z-compressed$%                       and return '.7z'   ;
    }
