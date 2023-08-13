@@ -45,7 +45,7 @@ sub get_suffix_from_type :prototype($) ($type) {
       m%^image/webp$%                                      and return '.webp' ;
       m%^application/vnd.ms-excel$%                        and return '.xls'  ;
       m%^text/xml$%                                        and return '.xml'  ;
-      m%^application/vnd.mozilla.xul$%                     and return '.xul'  ; # Also zul+xml
+      m%^application/vnd.mozilla.xul$%                     and return '.xul'  ; # Also xul+xml
       m%^application/zip$%                                 and return '.zip'  ;
       m%^application/7z-compressed$%                       and return '.7z'   ;
    }
