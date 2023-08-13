@@ -1,4 +1,4 @@
-sub get_suffix_from_type :prototype($) ($type) {
+sub get_suffix_from_type ($type) {
    !defined $type and return '.unk'; # $type is undefined
    $type = lc $type;
    $type =~ s%/x(-|.)%/%;

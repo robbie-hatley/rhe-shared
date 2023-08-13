@@ -1,9 +1,9 @@
-sub get_suffix_from_type :prototype($) ($type) {
-   !defined $type and return '.unk';       # If $type is undefined, use extension ".unk".
-   $type = lc $type;                       # Lower-case the type.
-   $type =~ s%/x(-|.)%/%;                  # Get rid of "unregistered "markers ("x-" and variants).
-   $type =~ s%\+\pL+$%%;                   # Get rid of alternate type interpretations (eg, xml for svg).
-   for ($type) {                           # Match normalized type against known types and choose extension:
+sub get_suffix_from_type ($type) {
+   !defined $type and return '.unk'; # If $type is undefined, use extension ".unk".
+   $type = lc $type;                 # Lower-case the type.
+   $type =~ s%/x(-|.)%/%;            # Get rid of "unregistered "markers ("x-" and variants).
+   $type =~ s%\+\pL+$%%;             # Get rid of alternate type interpretations (eg, xml for svg).
+   for ($type) {                     # Match normalized type against known types and choose extension:
       m%^video/msvideo$%                                   and return '.avi'  ;
       m%^image/bmp$%                                       and return '.bmp'  ;
       m%^application/freearc$%                             and return '.arc'  ;
