@@ -1,3 +1,0 @@
-"/usr/bin/perl" -MExtUtils::Command::MM -e 'cp_nonempty' -- eval_62_cac1.bs blib/arch/auto/eval_62_cac1/eval_62_cac1.bs 644
-Files found in blib/arch: installing files in blib/lib into architecture dependent library tree
-Installing /home/aragorn/Data/Celephais/Programming-Notes/_Inline/lib/auto/eval_62_cac1/eval_62_cac1.so
