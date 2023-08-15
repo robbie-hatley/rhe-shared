@@ -1,4 +1,4 @@
-#! /bin/perl
+#! /bin/perl -CSDA
 # get_correct_suffix.pl
 
 use v5.36;
@@ -7,12 +7,6 @@ use warnings;
 use utf8;
 use warnings FATAL => "utf8";
 use Sys::Binmode;
-
-use open ':std', IN  => ':encoding(UTF-8)';
-use open ':std', OUT => ':encoding(UTF-8)';
-use open         IN  => ':encoding(UTF-8)';
-use open         OUT => ':encoding(UTF-8)';
-# NOTE: these may be over-ridden later. Eg, "open($fh, '< :raw', e $path)".
 
 use Cwd;
 use Encode        qw( :DEFAULT encode decode :fallbacks :fallback_all );
