@@ -1,2 +1,2 @@
-# Programming-Notes
-A repository of notes, logs, pile-ups of error messages, and any other ancillary material which I may want to share with fellow programmers.
+# rhe-cli
+A repository of notes, scripts, programs, log files, error messages, and any other programming-related material which I may want to share with fellow programmers.
