@@ -7,11 +7,11 @@
 unsigned int adcISRStack[3] = {
    ((unsigned int)0xa5a5a5a5),
    ((unsigned int)0xa5a5a5a5),
-   ((unsigned int)0x00000000)
+   ((unsigned int)0xa5a500a5)
 };
 
 /*
- * This prints "i = (value) here.\n" 8 times and sets i to 8:
+ * This prints "i = (value) and *p = (value) here.\n" 9 times and sets i to 9:
  */
 void ADCStats() {
    int i = 0;
@@ -23,7 +23,9 @@ void ADCStats() {
       ++p;                                              /* advance pointer ONE byte!!! */
    }
    printf("Final value of i = %u\n", i);
-   printf("ISR stack high water = %u\n", i/sizeof(unsigned int));
+   /* The next line will print "2.250000" on little-endian systems,
+                            or "2.500000" on    big-endian systems: */
+   printf("ISR stack high water = %f\n", (double)i/(double)sizeof(unsigned int));
 }
 
 void main (void) {
